@@ -29,7 +29,14 @@ body {
   text-transform: capitalize;
 }
 
-header nav {
+header {
+  position: relative;
+}
+header .absolute {
+  position: absolute;
+  width: 100%;
+}
+header .absolute nav {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   font-size: 0.8rem;
@@ -37,52 +44,56 @@ header nav {
   background-color: #6bbb14;
   color: #fefefe;
 }
-header nav .container.flex {
+header .absolute nav .container.flex {
   justify-content: space-between;
 }
-header nav .container.flex > * {
+header .absolute nav .container.flex > * {
   display: flex;
 }
-header nav .container.flex .phone {
+header .absolute nav .container.flex .phone {
   justify-content: flex-start;
 }
-header nav .container.flex .phone * {
+header .absolute nav .container.flex .phone * {
   margin-right: 10px;
 }
-header nav .container.flex .socials {
+header .absolute nav .container.flex .socials {
   justify-content: flex-end;
   font-size: 1rem;
 }
-header nav .container.flex .socials * {
+header .absolute nav .container.flex .socials * {
   margin-left: 10px;
 }
-header .menu {
+header .absolute .menu {
   font-weight: bold;
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
 }
-header .menu .container {
+header .absolute .menu .container {
   display: flex;
   justify-content: space-between;
 }
-header .menu ul {
+header .absolute .menu ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .menu ul li {
+header .absolute .menu ul li {
   margin-left: 3rem;
   color: #262727;
   transition: 0.3s;
 }
-header .menu ul li:hover {
+header .absolute .menu ul li.faq a {
+  text-transform: uppercase;
+}
+header .absolute .menu ul li:hover {
   cursor: pointer;
   color: #6bbb14;
 }
-header .menu ul li.home {
+header .absolute .menu ul li.home {
   color: #6bbb14;
 }
-header .menu ul li.QUOTE {
+header .absolute .menu ul li.quote a {
+  text-transform: uppercase;
   color: #fefefe;
   background-color: #1975C0;
   font-size: 0.9rem;
@@ -94,8 +105,26 @@ header .menu ul li.QUOTE {
   letter-spacing: 0.1rem;
   transition: 0.3s;
 }
-header .menu ul li.QUOTE:hover {
+header .absolute .menu ul li.quote:hover {
   cursor: pointer;
   opacity: 0.8;
   color: #fefefe;
+}
+
+header .jumbo {
+  background: url("../img/avada-movers-homeherobackground-final.jpg") no-repeat top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  padding-top: 24rem;
+  padding-bottom: 18rem;
+}
+header .jumbo h1 {
+  font-size: 4rem;
+}
+header .jumbo span {
+  color: #6b6b6b;
 }

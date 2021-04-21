@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/12bool.css">
     <link rel="stylesheet" href="./assets/css/master.css">
-    <title></title>
+    <link rel="icon" href="./assets/img/boxicon.png" type="image/x-icon">
+    <title>MOVERS</title>
   </head>
   <body>
     <div id="root">
 
       <header>
-        <nav>
-          <div class="container flex">
-            <div class="phone">
-              <a href=""><i class="fas fa-phone"></i>Call us for a Free Quote: 1.800.555.6789</a>
+
+        <div class="absolute">
+          <nav>
+            <div class="container flex">
+              <div class="phone">
+                <a href=""><i class="fas fa-phone"></i>Call us for a Free Quote: 1.800.555.6789</a>
+              </div>
+              <ul class="socials">
+                <li v-for="socialIcon in socialIcons">
+                  <a  href="">
+                    <i :class="`fab fa-${socialIcon}`"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="socials">
-              <li v-for="socialIcon in socialIcons">
-                <a  href="">
-                  <i :class="`fab fa-${socialIcon}`"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="menu">
-          <div class="container">
-            <a href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
-            <ul class="link">
-              <li :class="link" v-for="link in headerLinks" ><a class="txt-capitalize" href="">{{link}}</a></li>
-            </ul>
+          </nav>
+          <div class="menu">
+            <div class="container">
+              <a href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
+              <ul class="link">
+                <li :class="link" v-for="link in headerLinks" ><a class="txt-capitalize" href="">{{link}}</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="jumbo"></div>
+
+        <div class="jumbo">
+          <span>MOVING WITHOUT THE HASSLE</span>
+          <h1>WE MAKE IT SIMPLE</h1>
+          <span>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</span>
+        </div>
       </header>
 
 

@@ -18,3 +18,21 @@
   padding-top: #{$remt}rem;
   padding-bottom: #{$remb}rem;
 }
+
+@mixin btn-blu{
+  text-transform: uppercase;
+  color: $primary-white;
+  background-color: $primary-blu-btn;
+  font-size: 0.9rem;
+  @include py(0.8);
+  @include px(1.8);
+  border-radius: 50px;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+}
+
+@mixin btn-blu-hover{
+  cursor: pointer;
+  opacity: 0.8;
+  color: $primary-white;
+}
