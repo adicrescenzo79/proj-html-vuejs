@@ -1,1 +1,101 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 85%;
+  max-width: 1300px;
+}
+
+.flex {
+  display: flex;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-capitalize {
+  text-transform: capitalize;
+}
+
+header nav {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #6bbb14;
+  color: #fefefe;
+}
+header nav .container.flex {
+  justify-content: space-between;
+}
+header nav .container.flex > * {
+  display: flex;
+}
+header nav .container.flex .phone {
+  justify-content: flex-start;
+}
+header nav .container.flex .phone * {
+  margin-right: 10px;
+}
+header nav .container.flex .socials {
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+header nav .container.flex .socials * {
+  margin-left: 10px;
+}
+header .menu {
+  font-weight: bold;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+header .menu .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu ul li {
+  margin-left: 3rem;
+  color: #262727;
+  transition: 0.3s;
+}
+header .menu ul li:hover {
+  cursor: pointer;
+  color: #6bbb14;
+}
+header .menu ul li.home {
+  color: #6bbb14;
+}
+header .menu ul li.QUOTE {
+  color: #fefefe;
+  background-color: #1975C0;
+  font-size: 0.9rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right: 1.8rem;
+  padding-left: 1.8rem;
+  border-radius: 50px;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+}
+header .menu ul li.QUOTE:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: #fefefe;
+}

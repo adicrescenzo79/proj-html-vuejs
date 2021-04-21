@@ -1,0 +1,20 @@
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin py($rem){
+  padding-top: #{$rem}rem;
+  padding-bottom: #{$rem}rem;
+}
+
+@mixin px($rem){
+  padding-right: #{$rem}rem;
+  padding-left: #{$rem}rem;
+}
+
+@mixin ptb($remt, $remb){
+  padding-top: #{$remt}rem;
+  padding-bottom: #{$remb}rem;
+}

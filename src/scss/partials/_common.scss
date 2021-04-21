@@ -1,0 +1,21 @@
+body{
+  font-size: 16px;
+  font-family: $primary-font;
+}
+
+.container{
+  width: 85%;
+  max-width: 1300px;
+}
+
+.flex{
+  display: flex;
+}
+
+.txt-uppercase{
+  text-transform: uppercase;
+}
+
+.txt-capitalize{
+  text-transform: capitalize;
+}
