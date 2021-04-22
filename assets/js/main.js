@@ -31,6 +31,19 @@ var app = new Vue({
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
       link: '#'
+    }],
+    testimonials: [{
+      img: './assets/img/avada-movers-johndoe-final.jpg',
+      name: 'John Doe',
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
+    }, {
+      img: './assets/img/avada-movers-janedoe-final.jpg',
+      name: 'Jane Doe',
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
+    }, {
+      img: './assets/img/avada-movers-johnsmith-final.jpg',
+      name: 'John Smith',
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
     }]
   }
 }); // METODO VUE PER LA RICHIESTA DI API

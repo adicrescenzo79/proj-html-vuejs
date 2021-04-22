@@ -79,9 +79,39 @@
           </div>
           </div>
         </section>
-        <section class="ease"></section>
-        <section class="testimonials"></section>
-        <section class="request"></section>
+
+        <section class="ease">
+          <div class="container">
+            <section class="square">
+              <span class="txt-uppercase">WE REMOVE THE HEADACHE FROM MOVING</span>
+              <h3 class="txt-capitalize">Move With Ease</h3>
+              <hr>
+              <p>With our super simple service we can take you from getting a quote, right through to being in your new home with all of your belongings securely packed and safely delivered, even in the rooms of your choice.</p>
+              <button class="txt-uppercase btn btn-blu">get a free quote now</button>
+            </section>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="container">
+            <span>HAPPY CUSTOMERS</span>
+            <h3>Testimonials</h3>
+            <div class="row">
+              <div v-for="testimonial in testimonials" class="col-lg-4">
+                <div class="content">
+                  <img :src="testimonial.img" alt="">
+                  <h4 class="title">{{testimonial.name}}</h4>
+                  <p>{{testimonial.text}}</p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-blu" type="button" name="button">read more testimonials</button>
+          </div>
+        </section>
+
+        <section class="request">
+
+        </section>
       </main>
 
 

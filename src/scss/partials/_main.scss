@@ -22,7 +22,9 @@ main{
       margin-bottom: 30px;
     }
   }
+
   .solution{
+    @include py(10);
     text-align: center;
     span{
       color: $primary-grey;
@@ -30,6 +32,7 @@ main{
     }
     h3{
       color: $primary-green;
+      margin: 1rem 0;
     }
     .content{
       background-color: $bg-grey;
@@ -37,9 +40,11 @@ main{
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      @include py(1);
     }
     img{
       max-width: 90%;
+      margin-bottom: 1rem;
     }
     .info{
       background-color: $primary-white;
@@ -48,11 +53,95 @@ main{
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      @include py(2);
       h4{
         color: $primary-blu;
+        margin-bottom: 1rem;
       }
       p{
         line-height: 2;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .ease{
+    @include py(10);
+    background: url('../img/avada-movers-movewithease-background-new.jpg') no-repeat top;
+    background-size: cover;
+    background-attachment: scroll;
+    .container{
+      .square{
+        @include py(3);
+        @include px(3);
+        text-align: center;
+        width: 50%;
+        background-color: $primary-green;
+        border: 1rem solid $brd-green;
+        color: $primary-white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        h3{
+          color: $primary-white;
+        }
+        hr{
+          border: 1px solid $line-green;
+          width: 70%;
+          margin: 2rem 0;
+        }
+        p{
+          line-height: 2;
+          margin-bottom: 2rem;
+        }
+        button{
+          font-size: 1.1rem;
+        }
+      }
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  .testimonials{
+    background: url('../img/avada-movers-testimonial-background.jpg') no-repeat center top;
+    background-image: cover;
+    // background-origin: content-box;
+    @include py(10);
+    .container{
+      text-align: center;
+      span{
+        font-weight: bold;
+        color: $primary-grey;
+      }
+      h3{
+        color: $primary-green;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+      }
+      p{
+        font-style: italic;
+        color: $primary-grey;
+        line-height: 2rem;
+      }
+      .content{
+        @include px(0.3);
+        img{
+          width: 40%;
+          border-radius: 50%;
+        }
+        h4{
+          color: $primary-blu;
+          margin: 2rem 0;
+        }
+      }
+      button{
+        margin-top: 5rem;
       }
     }
   }

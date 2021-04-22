@@ -39,6 +39,23 @@ var app = new Vue({
         btn: 'read more',
         link: '#',
       },
+    ],
+    testimonials: [
+      {
+        img: './assets/img/avada-movers-johndoe-final.jpg',
+        name: 'John Doe',
+        text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      },
+      {
+        img: './assets/img/avada-movers-janedoe-final.jpg',
+        name: 'Jane Doe',
+        text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      },
+      {
+        img: './assets/img/avada-movers-johnsmith-final.jpg',
+        name: 'John Smith',
+        text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      },
     ]
   }
 })

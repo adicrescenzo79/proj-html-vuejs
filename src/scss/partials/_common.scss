@@ -1,6 +1,7 @@
 body{
   font-size: 16px;
   font-family: $primary-font;
+  color: $primary-black;
 }
 
 .container{
@@ -39,8 +40,10 @@ body{
 
 h3{
   font-size: 2.9rem;
+  color: $primary-green;
 }
 
 h4{
-  font-size: 1.7;
+  font-size: 1.7rem;
+  color: $primary-blu;
 }

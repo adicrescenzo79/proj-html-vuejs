@@ -10,6 +10,7 @@ ul {
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  color: #262727;
 }
 
 .container {
@@ -61,10 +62,12 @@ body {
 
 h3 {
   font-size: 2.9rem;
+  color: #6bbb14;
 }
 
 h4 {
-  font-size: 1.7;
+  font-size: 1.7rem;
+  color: #1975C0;
 }
 
 header {
@@ -211,6 +214,8 @@ main .award p {
   margin-bottom: 30px;
 }
 main .solution {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
 }
 main .solution span {
@@ -219,6 +224,7 @@ main .solution span {
 }
 main .solution h3 {
   color: #6bbb14;
+  margin: 1rem 0;
 }
 main .solution .content {
   background-color: #e9e9e9;
@@ -226,9 +232,12 @@ main .solution .content {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 main .solution img {
   max-width: 90%;
+  margin-bottom: 1rem;
 }
 main .solution .info {
   background-color: #fefefe;
@@ -237,10 +246,97 @@ main .solution .info {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 main .solution .info h4 {
   color: #1975C0;
+  margin-bottom: 1rem;
 }
 main .solution .info p {
   line-height: 2;
+  margin-bottom: 1rem;
+}
+main .ease {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: url("../img/avada-movers-movewithease-background-new.jpg") no-repeat top;
+  background-size: cover;
+  background-attachment: scroll;
+}
+main .ease .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .ease .container .square {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  text-align: center;
+  width: 50%;
+  background-color: #6bbb14;
+  border: 1rem solid #4c8d53;
+  color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .ease .container .square span {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main .ease .container .square h3 {
+  color: #fefefe;
+}
+main .ease .container .square hr {
+  border: 1px solid #8fce53;
+  width: 70%;
+  margin: 2rem 0;
+}
+main .ease .container .square p {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+main .ease .container .square button {
+  font-size: 1.1rem;
+}
+main .testimonials {
+  background: url("../img/avada-movers-testimonial-background.jpg") no-repeat center top;
+  background-image: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+main .testimonials .container {
+  text-align: center;
+}
+main .testimonials .container span {
+  font-weight: bold;
+  color: #4d596a;
+}
+main .testimonials .container h3 {
+  color: #6bbb14;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+main .testimonials .container p {
+  font-style: italic;
+  color: #4d596a;
+  line-height: 2rem;
+}
+main .testimonials .container .content {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+main .testimonials .container .content img {
+  width: 40%;
+  border-radius: 50%;
+}
+main .testimonials .container .content h4 {
+  color: #1975C0;
+  margin: 2rem 0;
+}
+main .testimonials .container button {
+  margin-top: 5rem;
 }
