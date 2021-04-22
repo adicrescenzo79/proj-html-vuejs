@@ -110,7 +110,7 @@ main{
 
   .testimonials{
     background: url('../img/avada-movers-testimonial-background.jpg') no-repeat center top;
-    background-image: cover;
+    background-size: cover;
     // background-origin: content-box;
     @include py(10);
     .container{
@@ -142,6 +142,21 @@ main{
       }
       button{
         margin-top: 5rem;
+      }
+    }
+  }
+
+  .request{
+    border-bottom: 1rem solid $primary-green;
+    @include py(10);
+    background: url('../img/avada-movers-request-quote-background.jpg') repeat;
+    background-size: cover;
+    .container{
+      flex-direction: column;
+      p{
+        margin: 2rem 0;
+        width: 60%;
+        text-align: center;
       }
     }
   }

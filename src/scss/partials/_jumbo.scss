@@ -2,7 +2,7 @@ header{
   .jumbo{
     background: url('../img/avada-movers-homeherobackground-final.jpg') no-repeat top;
     background-size: 130%;
-    background-attachment: scroll;
+    // background-attachment: fixed;
     @include flex-center;
     flex-direction: column;
     font-weight: bold;

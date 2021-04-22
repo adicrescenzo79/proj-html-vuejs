@@ -70,6 +70,10 @@ h4 {
   color: #1975C0;
 }
 
+p {
+  line-height: 2rem;
+}
+
 header {
   position: relative;
 }
@@ -157,7 +161,6 @@ header .absolute .menu ul li.quote:hover {
 header .jumbo {
   background: url("../img/avada-movers-homeherobackground-final.jpg") no-repeat top;
   background-size: 130%;
-  background-attachment: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +307,7 @@ main .ease .container .square button {
 }
 main .testimonials {
   background: url("../img/avada-movers-testimonial-background.jpg") no-repeat center top;
-  background-image: cover;
+  background-size: cover;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -339,4 +342,19 @@ main .testimonials .container .content h4 {
 }
 main .testimonials .container button {
   margin-top: 5rem;
+}
+main .request {
+  border-bottom: 1rem solid #6bbb14;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: url("../img/avada-movers-request-quote-background.jpg") repeat;
+  background-size: cover;
+}
+main .request .container {
+  flex-direction: column;
+}
+main .request .container p {
+  margin: 2rem 0;
+  width: 60%;
+  text-align: center;
 }

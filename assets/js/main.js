@@ -18,19 +18,19 @@ var app = new Vue({
       title: 'Two Man Teams',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: '#'
+      link: ''
     }, {
       img: './assets/img/avada-movers-servicetwophoto-final.jpg',
       title: 'We Do All The Lifting',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: '#'
+      link: ''
     }, {
       img: './assets/img/avada-movers-servicethreephoto-final.jpg',
       title: 'Coast To Coast',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: '#'
+      link: ''
     }],
     testimonials: [{
       img: './assets/img/avada-movers-johndoe-final.jpg',
