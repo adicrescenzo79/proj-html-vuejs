@@ -1,7 +1,8 @@
 header{
   .jumbo{
     background: url('../img/avada-movers-homeherobackground-final.jpg') no-repeat top;
-    background-size: cover;
+    background-size: 130%;
+    background-attachment: scroll;
     @include flex-center;
     flex-direction: column;
     font-weight: bold;
@@ -13,4 +14,15 @@ header{
       color: $primary-grey;
     }
   }
+  .get{
+    background-color: $primary-blu;
+    color: $primary-white;
+    font-size: 1.1rem;
+    @include py(4);
+    letter-spacing: 0.1rem;
+    i{
+      margin-right: 10px;
+    }
+  }
+
 }

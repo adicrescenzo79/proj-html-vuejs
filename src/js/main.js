@@ -16,7 +16,6 @@ var app = new Vue({
       'blog',
       'contact',
       'free quote',
-      'prova'
     ],
   }
 })
