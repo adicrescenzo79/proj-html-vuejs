@@ -1,0 +1,59 @@
+main{
+  .award{
+    @include py(10);
+    background-color: $bg-grey;
+    .container{
+      flex-direction: column;
+      text-align: center;
+    }
+    span{
+      color: $primary-grey;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    h3{
+      color: $primary-green;
+      width: 35%;
+      margin-bottom: 30px;
+    }
+    p{
+      width: 60%;
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+  }
+  .solution{
+    text-align: center;
+    span{
+      color: $primary-grey;
+      font-weight: bold;
+    }
+    h3{
+      color: $primary-green;
+    }
+    .content{
+      background-color: $bg-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    img{
+      max-width: 90%;
+    }
+    .info{
+      background-color: $primary-white;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      h4{
+        color: $primary-blu;
+      }
+      p{
+        line-height: 2;
+      }
+    }
+  }
+}

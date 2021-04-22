@@ -45,24 +45,26 @@ body {
   border-radius: 50px;
   letter-spacing: 0.1rem;
   transition: 0.3s;
+  font-weight: bold;
 }
-.btn .btn-blu {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-right: 1.8rem;
-  padding-left: 1.8rem;
-  border-radius: 50px;
-  letter-spacing: 0.1rem;
-  transition: 0.3s;
+
+.btn-blu {
   color: #fefefe;
   background-color: #1975C0;
+  border: 0;
 }
-.btn .btn-blu:hover {
+.btn-blu:hover {
   cursor: pointer;
   opacity: 0.8;
   color: #fefefe;
+}
+
+h3 {
+  font-size: 2.9rem;
+}
+
+h4 {
+  font-size: 1.7;
 }
 
 header {
@@ -138,8 +140,10 @@ header .absolute .menu ul li.quote a {
   border-radius: 50px;
   letter-spacing: 0.1rem;
   transition: 0.3s;
+  font-weight: bold;
   color: #fefefe;
   background-color: #1975C0;
+  border: 0;
 }
 header .absolute .menu ul li.quote:hover {
   cursor: pointer;
@@ -163,7 +167,7 @@ header .jumbo h1 {
   font-size: 4rem;
 }
 header .jumbo span {
-  color: #6b6b6b;
+  color: #4d596a;
 }
 header .get {
   background-color: #1975C0;
@@ -172,7 +176,71 @@ header .get {
   padding-top: 4rem;
   padding-bottom: 4rem;
   letter-spacing: 0.1rem;
+  transition: 0.3s;
 }
 header .get i {
   margin-right: 10px;
+}
+header .get:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+main .award {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #e9e9e9;
+}
+main .award .container {
+  flex-direction: column;
+  text-align: center;
+}
+main .award span {
+  color: #4d596a;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main .award h3 {
+  color: #6bbb14;
+  width: 35%;
+  margin-bottom: 30px;
+}
+main .award p {
+  width: 60%;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+main .solution {
+  text-align: center;
+}
+main .solution span {
+  color: #4d596a;
+  font-weight: bold;
+}
+main .solution h3 {
+  color: #6bbb14;
+}
+main .solution .content {
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .solution img {
+  max-width: 90%;
+}
+main .solution .info {
+  background-color: #fefefe;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .solution .info h4 {
+  color: #1975C0;
+}
+main .solution .info p {
+  line-height: 2;
 }

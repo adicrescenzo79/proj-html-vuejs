@@ -20,8 +20,13 @@ header{
     font-size: 1.1rem;
     @include py(4);
     letter-spacing: 0.1rem;
+    transition: 0.3s;
     i{
       margin-right: 10px;
+    }
+    &:hover{
+      opacity: 0.8;
+      cursor: pointer;
     }
   }
 

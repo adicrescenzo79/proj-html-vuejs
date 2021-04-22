@@ -50,6 +50,40 @@
 
       </header>
 
+      <main>
+        <section class="award">
+          <div class="container flex-center">
+            <span class="txt-uppercase">HEADACHE FREE</span>
+            <h3 class="txt-capitalize">Award Winning Moving Company</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac augue. Orci varius natoque penatibus et magnis dis parturient montes, ridiculus mus. Aliquam enim leo, condimentum facilisis nulla sed, cursus arcu. Aliquam enim leo.</p>
+            <button class="btn btn-blu">read our testimonial</button>
+
+          </div>
+        </section>
+
+        <section class="solution">
+          <span class="txt-uppercase">WE ARE A PROFESSIONAL</span>
+          <h3 class="txt-capitalize">Full-Service Solution</h3>
+          <div class="container">
+            <div class="row">
+              <div v-for="service in services" class="col-lg-4">
+                <div class="content">
+                  <img :src="service.img" alt="">
+                  <div class="info">
+                    <h4 class="txt-capitalize">{{service.title}}</h4>
+                    <p>{{service.text}}</p>
+                    <button class="btn btn-blu">{{service.btn}}</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </section>
+        <section class="ease"></section>
+        <section class="testimonials"></section>
+        <section class="request"></section>
+      </main>
+
 
 
 
