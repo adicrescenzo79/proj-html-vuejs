@@ -63,15 +63,32 @@ body {
 h3 {
   font-size: 2.9rem;
   color: #6bbb14;
+  text-transform: capitalize;
 }
 
 h4 {
   font-size: 1.7rem;
   color: #1975C0;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 p {
   line-height: 2rem;
+}
+
+span {
+  color: #4d596a;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li {
+  text-transform: capitalize;
 }
 
 header {
@@ -172,9 +189,6 @@ header .jumbo {
 header .jumbo h1 {
   font-size: 4rem;
 }
-header .jumbo span {
-  color: #4d596a;
-}
 header .get {
   background-color: #1975C0;
   color: #fefefe;
@@ -202,12 +216,10 @@ main .award .container {
   text-align: center;
 }
 main .award span {
-  color: #4d596a;
   font-weight: bold;
   margin-bottom: 20px;
 }
 main .award h3 {
-  color: #6bbb14;
   width: 35%;
   margin-bottom: 30px;
 }
@@ -222,11 +234,9 @@ main .solution {
   text-align: center;
 }
 main .solution span {
-  color: #4d596a;
   font-weight: bold;
 }
 main .solution h3 {
-  color: #6bbb14;
   margin: 1rem 0;
 }
 main .solution .content {
@@ -253,7 +263,6 @@ main .solution .info {
   padding-bottom: 2rem;
 }
 main .solution .info h4 {
-  color: #1975C0;
   margin-bottom: 1rem;
 }
 main .solution .info p {
@@ -316,10 +325,8 @@ main .testimonials .container {
 }
 main .testimonials .container span {
   font-weight: bold;
-  color: #4d596a;
 }
 main .testimonials .container h3 {
-  color: #6bbb14;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
@@ -337,7 +344,6 @@ main .testimonials .container .content img {
   border-radius: 50%;
 }
 main .testimonials .container .content h4 {
-  color: #1975C0;
   margin: 2rem 0;
 }
 main .testimonials .container button {

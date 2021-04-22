@@ -41,15 +41,32 @@ body{
 h3{
   font-size: 2.9rem;
   color: $primary-green;
+  text-transform: capitalize;
 }
 
 h4{
   font-size: 1.7rem;
   color: $primary-blu;
+  text-transform: capitalize;
+}
+
+h5{
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 p{
   line-height: 2rem;
+}
+
+span{
+  color: $primary-grey;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li{
+  text-transform: capitalize;
 }
 
 // .parallax::after {

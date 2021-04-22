@@ -35,7 +35,7 @@
             <div class="container">
               <a href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
               <ul class="link">
-                <li :class="link" v-for="link in headerLinks" ><a class="txt-capitalize" href="">{{link}}</a></li>
+                <li v-for="avada in avadas" :class="avada.name"><a class="txt-capitalize" href="{{avada.link}}">{{avada.name}}</a></li>
               </ul>
             </div>
           </div>
@@ -46,6 +46,7 @@
           <h1>WE MAKE IT SIMPLE</h1>
           <span>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</span>
         </div>
+
         <div class="get txt-uppercase flex-center"><i class="far fa-paper-plane"></i>get a free quote online now!</div>
 
       </header>
@@ -53,8 +54,8 @@
       <main>
         <section class="award">
           <div class="container flex-center">
-            <span class="txt-uppercase">HEADACHE FREE</span>
-            <h3 class="txt-capitalize">Award Winning Moving Company</h3>
+            <span>HEADACHE FREE</span>
+            <h3>Award Winning Moving Company</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac augue. Orci varius natoque penatibus et magnis dis parturient montes, ridiculus mus. Aliquam enim leo, condimentum facilisis nulla sed, cursus arcu. Aliquam enim leo.</p>
             <button class="btn btn-blu">read our testimonial</button>
 
@@ -62,15 +63,15 @@
         </section>
 
         <section class="solution">
-          <span class="txt-uppercase">WE ARE A PROFESSIONAL</span>
-          <h3 class="txt-capitalize">Full-Service Solution</h3>
+          <span>WE ARE A PROFESSIONAL</span>
+          <h3>Full-Service Solution</h3>
           <div class="container">
             <div class="row">
               <div v-for="service in services" class="col-lg-4">
                 <div class="content">
                   <img :src="service.img" alt="">
                   <div class="info">
-                    <h4 class="txt-capitalize">{{service.title}}</h4>
+                    <h4>{{service.title}}</h4>
                     <p>{{service.text}}</p>
                     <button class="btn btn-blu">{{service.btn}}</button>
                   </div>
@@ -83,11 +84,11 @@
         <section class="ease">
           <div class="container">
             <section class="square">
-              <span class="txt-uppercase">WE REMOVE THE HEADACHE FROM MOVING</span>
-              <h3 class="txt-capitalize">Move With Ease</h3>
+              <span>WE REMOVE THE HEADACHE FROM MOVING</span>
+              <h3>Move With Ease</h3>
               <hr>
               <p>With our super simple service we can take you from getting a quote, right through to being in your new home with all of your belongings securely packed and safely delivered, even in the rooms of your choice.</p>
-              <button class="txt-uppercase btn btn-blu">get a free quote now</button>
+              <button class="btn btn-blu">get a free quote now</button>
             </section>
           </div>
         </section>
@@ -116,7 +117,43 @@
             <button class="btn btn-blu">click here</button>
           </div>
         </section>
+
       </main>
+
+      <footer>
+        <div class="site-links">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="content">
+                  <h5>ABOUT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ex ut sem accumsan vehicula. Integer elit arcu, hendrerit id sapien ut, facilisis accumsan arcu.</p>
+                  <a href=""><img class="logo" src="./assets/img/avada-movers-logo.png" alt=""></a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content">
+                  <h5>avada movers</h5>
+                  <ul>
+                    <li v-for="avada in avadas"><a :href="avada.link">{{avada.name}}</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="content">
+                  <h5>recent posts</h5>
+                  <ul>
+                    <li v-for="recent in recents"><a :href="recent.link">{{recent.name}}</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="ref"></div>
+      </footer>
 
 
 

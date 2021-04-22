@@ -8,15 +8,6 @@ var app = new Vue({
       'instagram',
       'youtube'
     ],
-    headerLinks: [
-      'home',
-      'rates',
-      'testimonials',
-      'faq',
-      'blog',
-      'contact',
-      'free quote',
-    ],
     services: [
       {
         img: './assets/img/avada-movers-serviceonephoto-final.jpg',
@@ -56,7 +47,50 @@ var app = new Vue({
         name: 'John Smith',
         text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
       },
-    ]
+    ],
+    avadas: [
+      {
+        name: 'home',
+        link: '',
+      },
+      {
+        name: 'rates',
+        link: '',
+      },
+      {
+        name: 'testimonials',
+        link: '',
+      },
+      {
+        name: 'blog',
+        link: '',
+      },
+      {
+        name: 'free quote',
+        link: '',
+      },
+    ],
+    recents: [
+      {
+        name: 'heading out to college?',
+        link: '',
+      },
+      {
+        name: 'moving your busiuness?',
+      },
+      {
+        name: 'outstanding quality',
+        link: '',
+      },
+      {
+        name: 'cost of moving',
+        link: '',
+      },
+      {
+        name: 'best moving tips',
+        link: '',
+      },
+    ],
   }
 })
 
