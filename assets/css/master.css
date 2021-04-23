@@ -532,6 +532,55 @@ main .request .container p {
   main .award .container h3 {
     width: 100%;
   }
+  main .solution {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  main .solution h3 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  main .solution .content img {
+    width: 87%;
+  }
+  main .solution .content .info {
+    width: 87%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  main .solution .content .info h4 {
+    line-height: 1.5;
+  }
+  main .ease {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  main .ease .container .square {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  main .ease .container .square .btn {
+    border-radius: 15%;
+  }
+  main .testimonials {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  main .testimonials .container .content img {
+    width: 60%;
+  }
+  main .testimonials .container .content p {
+    margin-bottom: 2rem;
+  }
+  main .testimonials .container button {
+    margin-top: 2rem;
+  }
+  main .request {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
 }
 footer .site-links {
   padding-top: 4rem;

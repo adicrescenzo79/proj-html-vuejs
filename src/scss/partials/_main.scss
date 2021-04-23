@@ -226,5 +226,61 @@ main{
         }
       }
     }
+
+    .solution{
+      @include py(4);
+      h3{
+        @include px(1);
+        margin-bottom: 2rem;
+      }
+      .content{
+        img{
+          width: 87%;
+        }
+        .info{
+          width: 87%;
+          @include px(1.5);
+          h4{
+            line-height: 1.5;
+          }
+        }
+
+      }
+
+    }
+
+    .ease{
+      @include py(4);
+      .container{
+        .square{
+          @include px(2.5);
+          .btn{
+            border-radius: 15%;
+          }
+        }
+      }
+    }
+
+    .testimonials{
+      @include py(4);
+      .container{
+        .content{
+          img{
+            width: 60%;
+          }
+          p{
+            margin-bottom: 2rem;
+          }
+        }
+        button{
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .request{
+      text-align: center;
+      @include ptb(4, 3);
+    }
   }
-  }
+}
