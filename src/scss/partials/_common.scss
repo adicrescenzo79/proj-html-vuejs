@@ -4,11 +4,6 @@ body{
   color: $primary-black;
 }
 
-.container{
-  width: 85%;
-  max-width: 1300px;
-}
-
 .flex{
   display: flex;
 }
@@ -90,11 +85,6 @@ li{
 // }
 
 @media all and (max-width: 991px){
-  .container{
-    width: 95%;
-    max-width: 1300px;
-  }
-
   h1{
     font-size: 3.4rem;
   }
@@ -107,4 +97,10 @@ li{
     font-size: 1.6rem;
   }
 
+}
+
+@media all and (max-width: 767px){
+  h1{
+    font-size: 2.3rem;
+  }
 }

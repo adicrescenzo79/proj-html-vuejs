@@ -13,11 +13,6 @@ body {
   color: #262727;
 }
 
-.container {
-  width: 85%;
-  max-width: 1300px;
-}
-
 .flex {
   display: flex;
 }
@@ -96,11 +91,6 @@ li {
 }
 
 @media all and (max-width: 991px) {
-  .container {
-    width: 95%;
-    max-width: 1300px;
-  }
-
   h1 {
     font-size: 3.4rem;
   }
@@ -111,6 +101,11 @@ li {
 
   h4 {
     font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 2.3rem;
   }
 }
 header {
@@ -276,7 +271,10 @@ header .get {
   letter-spacing: 0.1rem;
   transition: 0.3s;
 }
-header .get i {
+header .get i span {
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   margin-right: 10px;
 }
 header .get:hover {
@@ -290,6 +288,29 @@ header .get:hover {
     padding-bottom: 7rem;
     background-size: 218%;
     background-position: center top;
+  }
+}
+@media all and (max-width: 767px) {
+  header .jumbo {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    background-size: 376%;
+    background-position: top;
+  }
+  header .jumbo h1 {
+    margin: 1rem 0;
+  }
+  header .get {
+    text-align: center;
+    display: block;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  header .get i span {
+    line-height: 2;
   }
 }
 main .award {
