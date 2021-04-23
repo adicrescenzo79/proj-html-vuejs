@@ -342,9 +342,8 @@ main .solution .info p {
 main .ease {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background: url("../img/avada-movers-movewithease-background-new.jpg") no-repeat top;
+  background: url("../img/avada-movers-movewithease-background-new.jpg") no-repeat left;
   background-size: cover;
-  background-attachment: scroll;
 }
 main .ease .container {
   display: flex;
@@ -458,6 +457,13 @@ main .request .container p {
   }
   main .solution .content .info {
     max-width: 95%;
+  }
+  main .ease {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+  main .ease .container .square {
+    width: 100%;
   }
 }
 footer .site-links {

@@ -62,9 +62,9 @@ main{
 
   .ease{
     @include py(10);
-    background: url('../img/avada-movers-movewithease-background-new.jpg') no-repeat top;
+    background: url('../img/avada-movers-movewithease-background-new.jpg') no-repeat left;
     background-size: cover;
-    background-attachment: scroll;
+    // background-attachment: scroll;
     .container{
       .square{
         @include py(3);
@@ -178,6 +178,15 @@ main{
         }
         .info{
           max-width: 95%;
+        }
+      }
+    }
+
+    .ease{
+      @include ptb(7, 4);
+      .container{
+        .square{
+          width: 100%;
         }
       }
     }
