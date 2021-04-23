@@ -15,7 +15,7 @@
     <div id="root">
 
       <header>
-
+<!-- v-if="navbarOn || (width > 991px)"  -->
         <div class="absolute">
 
           <nav>
@@ -35,8 +35,11 @@
 
           <div class="menu">
             <div class="container">
-              <a href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
-              <ul class="link">
+              <a class="logo" href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
+              <div class="hamburger">
+                <i @click="navbarOn=!navbarOn" class="fas fa-bars"></i>
+              </div>
+              <ul v-if="navbarOn" class="link">
                 <li v-for="avada in avadas" :class="avada.name"><a class="txt-capitalize" href="{{avada.link}}">{{avada.name}}</a></li>
               </ul>
             </div>
@@ -208,6 +211,7 @@
 
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="./assets/js/main.js" charset="utf-8"></script>

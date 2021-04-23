@@ -38,6 +38,13 @@ header{
       .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .hamburger{
+        display: none;
+        font-size: 1.2rem;
+        color: $secondary-grey;
       }
       ul{
         display: flex;
@@ -66,6 +73,66 @@ header{
             }
             &:hover{
               @include btn-blu-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px){
+  header{
+    .absolute{
+      position: relative;
+      nav{
+        .container.flex{
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          .socials{
+            *{
+              margin-left: 0;
+            }
+            li{
+              margin: 1rem 1rem;
+
+            }
+          }
+        }
+      }
+      .menu{
+        .logo{
+          // width: 50%;
+        }
+        .hamburger{
+          display: block;
+          // width: 50%;
+        }
+        ul{
+          width: 100%;
+          flex-direction: column;
+          margin-top: 1rem;
+          li{
+            background-color: $bg-grey;
+            width: 100vw;
+            text-align: center;
+            font-size: 0.9rem;
+            @include py(1);
+            margin-left: 0;
+            border-top: 1px solid $secondary-grey;
+            &.home{
+              color: inherit;
+            }
+            &.quote{
+              border-bottom: 1px solid $secondary-grey;
+              a{
+                color: inherit;
+                font-size: inherit;
+                background-color: inherit;
+                @include py(0);
+                @include px(0);
+              }
             }
           }
         }

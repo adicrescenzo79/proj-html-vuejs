@@ -108,7 +108,7 @@ var app = new Vue({
         title: '© Copyright 2012 - 2021',
         name: '',
         link: '',
-        class: 'line',
+        class: 'line year',
       },
       {
         title: 'Avada Theme by ',
@@ -129,7 +129,17 @@ var app = new Vue({
         class: 'no-line',
       },
     ],
+    navbarOn: false,
+    width: '',
+  },
+  created: function(){
+    this.width = window.innerWidth;
+    window.addEventListener('resize', () => {
+      this.width = window.innerWidth;
+      console.log(this.width);
+    });
   }
+
 })
 
 // METODO VUE PER LA RICHIESTA DI API

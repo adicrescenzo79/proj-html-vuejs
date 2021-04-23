@@ -91,7 +91,7 @@ var app = new Vue({
       title: '© Copyright 2012 - 2021',
       name: '',
       link: '',
-      "class": 'line'
+      "class": 'line year'
     }, {
       title: 'Avada Theme by ',
       name: 'ThemeFusion',
@@ -107,7 +107,18 @@ var app = new Vue({
       name: 'WordPress',
       link: 'https://wordpress.org/',
       "class": 'no-line'
-    }]
+    }],
+    navbarOn: false,
+    width: ''
+  },
+  created: function created() {
+    var _this = this;
+
+    this.width = window.innerWidth;
+    window.addEventListener('resize', function () {
+      _this.width = window.innerWidth;
+      console.log(_this.width);
+    });
   }
 }); // METODO VUE PER LA RICHIESTA DI API
 // axios
