@@ -1,4 +1,63 @@
 footer{
   .site-links{
+    @include py(4);
+    p{
+      margin: 2rem 0;
+      width: 97%;
+    }
+    h5{
+      margin-bottom: 2rem
+    }
+    li{
+      margin-bottom: 1.5rem;
+      transition: 0.3s;
+      &.home{
+        color: $primary-green;
+        span{
+          color: $primary-green;
+        }
+      }
+      &:hover{
+        color: $primary-green;
+        cursor: pointer;
+        span{
+          color: $primary-green;
+        }
+      }
+      span{
+        font-weight: normal;
+        color: $primary-black;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .ref{
+    background-color: $primary-green;
+    color: $primary-white;
+    @include py(2);
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ul{
+        display: flex;
+        align-items: center;
+        &.copy{
+          font-size: 0.9rem;
+        }
+        li.line:after{
+          content: '|';
+          margin: 0 10px;
+        }
+        &.socials{
+          li{
+            font-size: 1.2rem;
+            margin: 0 10px;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
   }
 }

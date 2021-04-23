@@ -17,6 +17,7 @@
       <header>
 
         <div class="absolute">
+
           <nav>
             <div class="container flex">
               <div class="phone">
@@ -24,13 +25,14 @@
               </div>
               <ul class="socials">
                 <li v-for="socialIcon in socialIcons">
-                  <a  href="">
-                    <i :class="`fab fa-${socialIcon}`"></i>
+                  <a target="_blank" :href="socialIcon.link">
+                    <i :class="`fab fa-${socialIcon.name}`"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </nav>
+
           <div class="menu">
             <div class="container">
               <a href=""><img src="./assets/img/avada-movers-logo.png" alt=""></a>
@@ -39,6 +41,7 @@
               </ul>
             </div>
           </div>
+
         </div>
 
         <div class="jumbo ">
@@ -121,6 +124,7 @@
       </main>
 
       <footer>
+
         <div class="site-links">
           <div class="container">
             <div class="row">
@@ -135,7 +139,7 @@
                 <div class="content">
                   <h5>avada movers</h5>
                   <ul>
-                    <li v-for="avada in avadas"><a :href="avada.link">{{avada.name}}</a></li>
+                    <li :class="avada.name" v-for="avada in avadas"><a :href="avada.link"><span>></span>{{avada.name}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -143,7 +147,7 @@
                 <div class="content">
                   <h5>recent posts</h5>
                   <ul>
-                    <li v-for="recent in recents"><a :href="recent.link">{{recent.name}}</a></li>
+                    <li v-for="recent in recents"><a :href="recent.link"><span>></span>{{recent.name}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -152,7 +156,20 @@
           </div>
         </div>
 
-        <div class="ref"></div>
+        <div class="ref">
+          <div class="container">
+            <ul class="copy">
+              <li :class="copy.class" v-for="copy in copys">{{copy.title}}<a target="_blank" :href="copy.link">{{copy.name}}</a></li>
+            </ul>
+            <ul class="socials">
+              <li v-for="socialIcon in socialIcons">
+                <a target="_blank" :href="socialIcon.link">
+                  <i :class="`fab fa-${socialIcon.name}`"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
 
 

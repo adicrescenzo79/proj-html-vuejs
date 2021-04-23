@@ -364,3 +364,64 @@ main .request .container p {
   width: 60%;
   text-align: center;
 }
+
+footer .site-links {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+footer .site-links p {
+  margin: 2rem 0;
+  width: 97%;
+}
+footer .site-links h5 {
+  margin-bottom: 2rem;
+}
+footer .site-links li {
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+footer .site-links li.home {
+  color: #6bbb14;
+}
+footer .site-links li.home span {
+  color: #6bbb14;
+}
+footer .site-links li:hover {
+  color: #6bbb14;
+  cursor: pointer;
+}
+footer .site-links li:hover span {
+  color: #6bbb14;
+}
+footer .site-links li span {
+  font-weight: normal;
+  color: #262727;
+  margin-right: 5px;
+}
+footer .ref {
+  background-color: #6bbb14;
+  color: #fefefe;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer .ref .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .ref .container ul {
+  display: flex;
+  align-items: center;
+}
+footer .ref .container ul.copy {
+  font-size: 0.9rem;
+}
+footer .ref .container ul li.line:after {
+  content: "|";
+  margin: 0 10px;
+}
+footer .ref .container ul.socials li {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  margin-top: 2rem;
+}

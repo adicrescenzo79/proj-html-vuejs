@@ -11,7 +11,35 @@ Vue.config.devtools = true;
 var app = new Vue({
   el: '#root',
   data: {
-    socialIcons: ['facebook-f', 'twitter', 'instagram', 'youtube'],
+    socialIcons: [{
+      name: 'facebook-f',
+      link: 'https://www.facebook.com/ThemeFusionAvada/'
+    }, {
+      name: 'twitter',
+      link: 'https://twitter.com/theme_fusion'
+    }, {
+      name: 'instagram',
+      link: 'https://www.instagram.com/themefusion/'
+    }, {
+      name: 'youtube',
+      link: 'https://www.youtube.com/channel/UC_C7uAOAH9RMzZs-CKCZ62w'
+    }],
+    avadas: [{
+      name: 'home',
+      link: ''
+    }, {
+      name: 'rates',
+      link: ''
+    }, {
+      name: 'testimonials',
+      link: ''
+    }, {
+      name: 'blog',
+      link: ''
+    }, {
+      name: 'free quote',
+      link: ''
+    }],
     services: [{
       img: './assets/img/avada-movers-serviceonephoto-final.jpg',
       title: 'Two Man Teams',
@@ -44,22 +72,6 @@ var app = new Vue({
       name: 'John Smith',
       text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
     }],
-    avadas: [{
-      name: 'home',
-      link: ''
-    }, {
-      name: 'rates',
-      link: ''
-    }, {
-      name: 'testimonials',
-      link: ''
-    }, {
-      name: 'blog',
-      link: ''
-    }, {
-      name: 'free quote',
-      link: ''
-    }],
     recents: [{
       name: 'heading out to college?',
       link: ''
@@ -74,6 +86,27 @@ var app = new Vue({
     }, {
       name: 'best moving tips',
       link: ''
+    }],
+    copys: [{
+      title: '© Copyright 2012 - 2021',
+      name: '',
+      link: '',
+      "class": 'line'
+    }, {
+      title: 'Avada Theme by ',
+      name: 'ThemeFusion',
+      link: 'https://theme-fusion.com/',
+      "class": 'line'
+    }, {
+      title: 'All Rights Reserved',
+      name: '',
+      link: '',
+      "class": 'line'
+    }, {
+      title: 'Powered by ',
+      name: 'WordPress',
+      link: 'https://wordpress.org/',
+      "class": 'no-line'
     }]
   }
 }); // METODO VUE PER LA RICHIESTA DI API
