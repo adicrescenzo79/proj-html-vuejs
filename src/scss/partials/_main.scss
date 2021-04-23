@@ -215,3 +215,16 @@ main{
     }
   }
 }
+
+@media all and (max-width: 767px){
+  main{
+    .award{
+      @include ptb(3, 5);
+      .container{
+        h3{
+          width: 100%;
+        }
+      }
+    }
+  }
+  }

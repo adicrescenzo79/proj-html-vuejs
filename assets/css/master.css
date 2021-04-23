@@ -107,6 +107,10 @@ li {
   h1 {
     font-size: 2.3rem;
   }
+
+  h3 {
+    font-size: 2rem;
+  }
 }
 header {
   position: relative;
@@ -517,6 +521,15 @@ main .request .container p {
   }
   main .request .container p {
     margin: 2rem 0;
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  main .award {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  main .award .container h3 {
     width: 100%;
   }
 }
