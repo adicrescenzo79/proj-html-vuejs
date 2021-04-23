@@ -117,7 +117,6 @@ var app = new Vue({
     this.width = window.innerWidth;
     window.addEventListener('resize', function () {
       _this.width = window.innerWidth;
-      console.log(_this.width);
     });
   }
 }); // METODO VUE PER LA RICHIESTA DI API

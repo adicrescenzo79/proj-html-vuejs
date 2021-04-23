@@ -28,3 +28,14 @@ header{
   }
 
 }
+
+@media all and (max-width: 991px){
+  header{
+    .jumbo{
+      @include ptb(11, 7);
+      background-size: 218%;
+      background-position: center top;
+
+    }
+  }
+}
