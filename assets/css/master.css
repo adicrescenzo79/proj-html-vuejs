@@ -66,7 +66,7 @@ h1 {
 
 h3 {
   font-size: 2.9rem;
-  color: #6bbb14;
+  color: #333333;
   text-transform: capitalize;
 }
 
@@ -125,7 +125,7 @@ header .absolute nav {
   padding-bottom: 0.8rem;
   font-size: 0.8rem;
   font-weight: 500;
-  background-color: #6bbb14;
+  background-color: #333333;
   color: #fefefe;
 }
 header .absolute nav .container.flex {
@@ -178,10 +178,10 @@ header .absolute .menu ul li.faq a {
 }
 header .absolute .menu ul li:hover {
   cursor: pointer;
-  color: #6bbb14;
+  color: #333333;
 }
 header .absolute .menu ul li.home {
-  color: #6bbb14;
+  color: #333333;
 }
 header .absolute .menu ul li.quote a {
   text-transform: uppercase;
@@ -370,7 +370,7 @@ main .ease .container .square {
   padding-left: 3rem;
   text-align: center;
   width: 50%;
-  background-color: #6bbb14;
+  background-color: #333333;
   border: 1rem solid #4c8d53;
   color: #fefefe;
   display: flex;
@@ -432,7 +432,7 @@ main .testimonials .container button {
   margin-top: 5rem;
 }
 main .request {
-  border-bottom: 1rem solid #6bbb14;
+  border-bottom: 1rem solid #333333;
   padding-top: 10rem;
   padding-bottom: 10rem;
   background: url("../img/avada-movers-request-quote-background.jpg") repeat;
@@ -504,17 +504,17 @@ footer .site-links li {
   transition: 0.3s;
 }
 footer .site-links li.home {
-  color: #6bbb14;
+  color: #333333;
 }
 footer .site-links li.home span {
-  color: #6bbb14;
+  color: #333333;
 }
 footer .site-links li:hover {
-  color: #6bbb14;
+  color: #333333;
   cursor: pointer;
 }
 footer .site-links li:hover span {
-  color: #6bbb14;
+  color: #333333;
 }
 footer .site-links li span {
   font-weight: normal;
@@ -522,7 +522,7 @@ footer .site-links li span {
   margin-right: 5px;
 }
 footer .ref {
-  background-color: #6bbb14;
+  background-color: #333333;
   color: #fefefe;
   padding-top: 2rem;
   padding-bottom: 2rem;
