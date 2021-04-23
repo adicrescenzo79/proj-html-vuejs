@@ -487,6 +487,14 @@ main .request .container p {
   main .testimonials .container .content img {
     width: 22%;
   }
+  main .request {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+  main .request .container p {
+    margin: 2rem 0;
+    width: 100%;
+  }
 }
 footer .site-links {
   padding-top: 4rem;

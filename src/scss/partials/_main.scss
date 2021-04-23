@@ -203,5 +203,15 @@ main{
         }
       }
     }
+
+    .request{
+      @include ptb(6, 5);
+      .container{
+        p{
+          margin: 2rem 0;
+          width: 100%;
+        }
+      }
+    }
   }
 }
