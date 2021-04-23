@@ -76,3 +76,41 @@ footer{
     }
   }
 }
+
+@media all and (max-width: 767px){
+  footer{
+    .site-links{
+      @include ptb(0, 4);
+      h5{
+        margin-top: 4rem;
+      }
+      p{
+        width: 90%;
+        margin-bottom: 2.5rem;
+      }
+      li{
+        margin-top: 2rem;
+        margin-bottom:0;
+      }
+    }
+
+    .ref{
+      .container{
+        ul{
+          &.copy{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            li{
+              margin: 10px 5px;
+              &.line:after{
+                margin: 0;
+                content: '';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
