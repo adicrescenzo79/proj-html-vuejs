@@ -190,5 +190,18 @@ main{
         }
       }
     }
+
+    .testimonials{
+      @include py(6);
+      background-size: 450%;
+      background-position:  top center;
+      .container{
+        .content{
+          img{
+            width: 22%;
+          }
+        }
+      }
+    }
   }
 }

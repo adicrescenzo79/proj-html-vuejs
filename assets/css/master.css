@@ -60,6 +60,10 @@ body {
   color: #fefefe;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 h3 {
   font-size: 2.9rem;
   color: #6bbb14;
@@ -95,6 +99,18 @@ li {
   .container {
     width: 95%;
     max-width: 1300px;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
   }
 }
 header {
@@ -247,9 +263,6 @@ header .jumbo {
   font-weight: bold;
   padding-top: 24rem;
   padding-bottom: 18rem;
-}
-header .jumbo h1 {
-  font-size: 4rem;
 }
 header .get {
   background-color: #1975C0;
@@ -464,6 +477,15 @@ main .request .container p {
   }
   main .ease .container .square {
     width: 100%;
+  }
+  main .testimonials {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-size: 450%;
+    background-position: top center;
+  }
+  main .testimonials .container .content img {
+    width: 22%;
   }
 }
 footer .site-links {
