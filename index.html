@@ -15,7 +15,7 @@
     <div id="root">
 
       <header>
-<!-- v-if="navbarOn || (width > 991px)"  -->
+
         <div class="absolute">
 
           <nav>
@@ -73,7 +73,7 @@
           <h3>Full-Service Solution</h3>
           <div class="container">
             <div class="row">
-              <div v-for="service in services" class="col-lg-4">
+              <div v-for="service in services" class="col-lg-4 col-sm-12">
                 <div class="content">
                   <img :src="service.img" alt="">
                   <div class="info">

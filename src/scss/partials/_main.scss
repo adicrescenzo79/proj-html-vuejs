@@ -168,5 +168,18 @@ main{
       }
 
     }
+
+    .solution{
+      @include py(5);
+      .content{
+        margin-bottom: 1rem;
+        img{
+          max-width: 95%;
+        }
+        .info{
+          max-width: 95%;
+        }
+      }
+    }
   }
 }

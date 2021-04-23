@@ -446,6 +446,19 @@ main .request .container p {
   main .award p {
     width: 100%;
   }
+  main .solution {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  main .solution .content {
+    margin-bottom: 1rem;
+  }
+  main .solution .content img {
+    max-width: 95%;
+  }
+  main .solution .content .info {
+    max-width: 95%;
+  }
 }
 footer .site-links {
   padding-top: 4rem;
