@@ -153,3 +153,20 @@ main{
     }
   }
 }
+
+@media all and (max-width: 991px){
+  main{
+    .award{
+      @include py(5);
+      h3{
+        width: 60%;
+      }
+      p{
+        width: 100%;
+        // line-height: 2;
+        // margin-bottom: 30px;
+      }
+
+    }
+  }
+}

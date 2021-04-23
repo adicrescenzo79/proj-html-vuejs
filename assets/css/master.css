@@ -435,6 +435,18 @@ main .request .container p {
   text-align: center;
 }
 
+@media all and (max-width: 991px) {
+  main .award {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  main .award h3 {
+    width: 60%;
+  }
+  main .award p {
+    width: 100%;
+  }
+}
 footer .site-links {
   padding-top: 4rem;
   padding-bottom: 4rem;
