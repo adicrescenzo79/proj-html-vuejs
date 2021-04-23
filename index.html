@@ -40,7 +40,7 @@
                 <i @click="navbarOn=!navbarOn" class="fas fa-bars"></i>
               </div>
               <ul v-if="navbarOn || (width > 991)" class="link">
-                <li v-for="avada in avadas" :class="avada.name"><a class="txt-capitalize" href="{{avada.link}}">{{avada.name}}</a></li>
+                <li v-for="avada in avadas" :class="avada.name"><a class="txt-capitalize" :href="avada.link">{{avada.name}}</a></li>
               </ul>
             </div>
           </div>

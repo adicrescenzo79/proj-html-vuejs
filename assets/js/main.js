@@ -26,19 +26,19 @@ var app = new Vue({
     }],
     avadas: [{
       name: 'home',
-      link: ''
+      link: '#'
     }, {
       name: 'rates',
-      link: ''
+      link: '#'
     }, {
       name: 'testimonials',
-      link: ''
+      link: '#'
     }, {
       name: 'blog',
-      link: ''
+      link: '#'
     }, {
       name: 'free quote',
-      link: ''
+      link: '#'
     }],
     services: [{
       img: './assets/img/avada-movers-serviceonephoto-final.jpg',

@@ -252,6 +252,9 @@ header .absolute .menu ul li.quote:hover {
     padding-right: 0rem;
     padding-left: 0rem;
   }
+  header .absolute .menu ul li.quote a:hover {
+    color: #262727;
+  }
 }
 header .jumbo {
   background: url("../img/avada-movers-homeherobackground-final.jpg") no-repeat top;
@@ -555,4 +558,14 @@ footer .ref .container ul.socials li {
   font-size: 1.2rem;
   margin: 0 10px;
   margin-top: 2rem;
+}
+
+@media all and (max-width: 991px) {
+  footer .site-links li {
+    margin-bottom: 2rem;
+  }
+  footer .ref {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
 }

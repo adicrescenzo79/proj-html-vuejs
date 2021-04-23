@@ -132,6 +132,9 @@ header{
                 background-color: inherit;
                 @include py(0);
                 @include px(0);
+                &:hover{
+                  color: $primary-black;
+                }
               }
             }
           }

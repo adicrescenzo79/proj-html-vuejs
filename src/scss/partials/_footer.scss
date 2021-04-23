@@ -61,3 +61,18 @@ footer{
     }
   }
 }
+
+@media all and (max-width: 991px){
+  footer{
+    .site-links{
+      li{
+        margin-bottom: 2rem;
+      }
+    }
+
+    .ref{
+      @include ptb(2, 5);
+
+    }
+  }
+}
