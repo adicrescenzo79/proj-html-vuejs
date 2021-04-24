@@ -4,9 +4,12 @@ header{
     background-size: 130%;
     // background-attachment: fixed;
     @include flex-center;
-    flex-direction: column;
     font-weight: bold;
     @include ptb(24, 18);
+    .content{
+      @include flex-center;
+      flex-direction: column;
+    }
   }
   .get{
     background-color: $primary-blu;

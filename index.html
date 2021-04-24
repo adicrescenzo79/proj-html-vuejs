@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -15,7 +16,6 @@
     <div id="root">
 
       <header>
-
         <div class="absolute">
 
           <nav>
@@ -39,7 +39,7 @@
               <div class="hamburger">
                 <i @click="navbarOn=!navbarOn" class="fas fa-bars"></i>
               </div>
-              <ul v-if="navbarOn || (width > 991)" class="link">
+              <ul :class="(navbarOn) ? 'active animate__fadeInDown' : ''" class="animate__animated link">
                 <li v-for="avada in avadas" :class="avada.name"><a class="txt-capitalize" :href="avada.link">{{avada.name}}</a></li>
               </ul>
             </div>
@@ -48,9 +48,12 @@
         </div>
 
         <div class="jumbo ">
-          <span>MOVING WITHOUT THE HASSLE</span>
-          <h1>WE MAKE IT SIMPLE</h1>
-          <span>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</span>
+          <div class="content animate__animated  animate__fadeInDown">
+
+            <span>MOVING WITHOUT THE HASSLE</span>
+            <h1>WE MAKE IT SIMPLE</h1>
+            <span>PROFESSIONAL SERVICE WITH QUALITY AND CUSTOMER SATISFACTION</span>
+          </div>
         </div>
 
         <div class="get txt-uppercase flex-center"><i class="far fa-paper-plane"><span>   get a free quote online now!</span></i></div>
@@ -59,7 +62,7 @@
 
       <main>
         <section class="award">
-          <div class="container flex-center">
+          <div class="container flex-center animate__animated animate__fadeInLeft">
             <span>HEADACHE FREE</span>
             <h3>Award Winning Moving Company</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac augue. Orci varius natoque penatibus et magnis dis parturient montes, ridiculus mus. Aliquam enim leo, condimentum facilisis nulla sed, cursus arcu. Aliquam enim leo.</p>
@@ -74,7 +77,7 @@
           <div class="container">
             <div class="row">
               <div v-for="service in services" class="col-lg-4 col-sm-12">
-                <div class="content">
+                <div class="content animate__animated" :class="service.class">
                   <img :src="service.img" alt="">
                   <div class="info">
                     <h4>{{service.title}}</h4>
@@ -89,7 +92,7 @@
 
         <section class="ease">
           <div class="container">
-            <section class="square">
+            <section class="square animate__fadeInRight animate__animated">
               <span>WE REMOVE THE HEADACHE FROM MOVING</span>
               <h3>Move With Ease</h3>
               <hr>
@@ -105,7 +108,7 @@
             <h3>Testimonials</h3>
             <div class="row">
               <div v-for="testimonial in testimonials" class="col-lg-4 col-sm-12">
-                <div class="content">
+                <div class="content animate__animated" :class="testimonial.class">
                   <img :src="testimonial.img" alt="">
                   <h4 class="title">{{testimonial.name}}</h4>
                   <p>{{testimonial.text}}</p>

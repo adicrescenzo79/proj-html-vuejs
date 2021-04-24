@@ -49,6 +49,7 @@ var app = new Vue({
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
         btn: 'read more',
         link: '',
+        class: 'animate__fadeInLeft'
       },
       {
         img: './assets/img/avada-movers-servicetwophoto-final.jpg',
@@ -56,6 +57,7 @@ var app = new Vue({
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
         btn: 'read more',
         link: '',
+        class: 'animate__fadeInTop'
       },
       {
         img: './assets/img/avada-movers-servicethreephoto-final.jpg',
@@ -63,6 +65,7 @@ var app = new Vue({
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
         btn: 'read more',
         link: '',
+        class: 'animate__fadeInRight'
       },
     ],
     testimonials: [
@@ -70,16 +73,19 @@ var app = new Vue({
         img: './assets/img/avada-movers-johndoe-final.jpg',
         name: 'John Doe',
         text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+        class: 'animate__fadeInLeft'
       },
       {
         img: './assets/img/avada-movers-janedoe-final.jpg',
         name: 'Jane Doe',
         text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+        class: 'animate__fadeInTop'
       },
       {
         img: './assets/img/avada-movers-johnsmith-final.jpg',
         name: 'John Smith',
         text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+        class: 'animate__fadeInRight'
       },
     ],
     recents: [

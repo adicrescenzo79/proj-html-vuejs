@@ -45,32 +45,38 @@ var app = new Vue({
       title: 'Two Man Teams',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: ''
+      link: '',
+      "class": 'animate__fadeInLeft'
     }, {
       img: './assets/img/avada-movers-servicetwophoto-final.jpg',
       title: 'We Do All The Lifting',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: ''
+      link: '',
+      "class": 'animate__fadeInTop'
     }, {
       img: './assets/img/avada-movers-servicethreephoto-final.jpg',
       title: 'Coast To Coast',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac consectetur augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       btn: 'read more',
-      link: ''
+      link: '',
+      "class": 'animate__fadeInRight'
     }],
     testimonials: [{
       img: './assets/img/avada-movers-johndoe-final.jpg',
       name: 'John Doe',
-      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      "class": 'animate__fadeInLeft'
     }, {
       img: './assets/img/avada-movers-janedoe-final.jpg',
       name: 'Jane Doe',
-      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      "class": 'animate__fadeInTop'
     }, {
       img: './assets/img/avada-movers-johnsmith-final.jpg',
       name: 'John Smith',
-      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”'
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus dolor, aliquet sed maximus et, vestibulum pulvinar leo. Vivamus varius pretium fermentum.”',
+      "class": 'animate__fadeInRight'
     }],
     recents: [{
       name: 'heading out to college?',

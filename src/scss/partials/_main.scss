@@ -255,7 +255,7 @@ main{
         .square{
           @include px(2.5);
           .btn{
-            border-radius: 15%;
+            border-radius: 25px;
           }
         }
       }

@@ -45,6 +45,9 @@ header{
         display: none;
         font-size: 1.2rem;
         color: $secondary-grey;
+        &:hover{
+          cursor: pointer;
+        }
       }
       ul{
         display: flex;
@@ -110,9 +113,13 @@ header{
           // width: 50%;
         }
         ul{
+          display: none;
           width: 100%;
           flex-direction: column;
           margin-top: 1rem;
+          &.active{
+            display: flex;
+          }
           li{
             background-color: $bg-grey;
             width: 100vw;
