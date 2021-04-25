@@ -114,16 +114,45 @@ var app = new Vue({
       link: 'https://wordpress.org/',
       "class": 'no-line'
     }],
-    navbarOn: false,
+    // navbarOn: false,
+    menuDisplay: 'none',
     width: ''
   },
   created: function created() {
     var _this = this;
 
-    this.width = window.innerWidth;
+    this.width = $(window).width();
+
+    if (this.width > 991) {
+      this.menuDisplay = 'flex';
+    } else {
+      this.menuDisplay = 'none';
+    }
+
+    $('.link').css('display', this.menuDisplay);
     window.addEventListener('resize', function () {
       _this.width = window.innerWidth;
+
+      if (_this.width <= 991) {
+        _this.menuDisplay = 'none';
+      } else {
+        _this.menuDisplay = 'flex';
+      }
+
+      $('.link').css('display', _this.menuDisplay);
     });
+  },
+  methods: {
+    menu: function menu() {
+      if (this.menuDisplay == 'flex') {
+        $('.link').slideUp();
+        this.menuDisplay = 'none';
+      } else {
+        $('.link').slideDown();
+        this.menuDisplay = 'flex';
+        $('.link').css('display', this.menuDisplay);
+      }
+    }
   }
 }); // METODO VUE PER LA RICHIESTA DI API
 // axios

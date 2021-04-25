@@ -135,14 +135,41 @@ var app = new Vue({
         class: 'no-line',
       },
     ],
-    navbarOn: false,
+    // navbarOn: false,
+    menuDisplay: 'none',
     width: '',
   },
   created: function(){
-    this.width = window.innerWidth;
+    this.width = $(window).width();
+    if (this.width > 991) {
+      this.menuDisplay = 'flex';
+    } else {
+      this.menuDisplay = 'none';
+    }
+    $('.link').css('display', this.menuDisplay);
     window.addEventListener('resize', () => {
       this.width = window.innerWidth;
+      if (this.width <= 991) {
+        this.menuDisplay = 'none';
+      } else {
+        this.menuDisplay = 'flex';
+      }
+
+      $('.link').css('display', this.menuDisplay);
     });
+  },
+  methods:{
+    menu: function(){
+      if (this.menuDisplay == 'flex') {
+        $('.link').slideUp();
+        this.menuDisplay = 'none';
+      } else {
+        $('.link').slideDown();
+        this.menuDisplay = 'flex';
+        $('.link').css('display', this.menuDisplay);
+      }
+
+    }
   }
 
 })

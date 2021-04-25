@@ -608,7 +608,6 @@ header .absolute .menu .hamburger:hover {
   cursor: pointer;
 }
 header .absolute .menu ul {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -667,7 +666,6 @@ header .absolute .menu ul li.quote:hover {
     display: block;
   }
   header .absolute .menu ul {
-    display: none;
     width: 100%;
     flex-direction: column;
     margin-top: 1rem;
